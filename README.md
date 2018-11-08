@@ -1,3 +1,8 @@
+## Captone Project 1
+
+A simple Java program that allows a user to input data in a football match. The data may include "shots on target", shots off target "number of goals", fouls, red cards, yellow cards, corner kicks,  and free kicks and the players. The program should provide a report of the data input in the end. Please use Java programming language
+
+
 ```
 import java.util.Scanner;
 
