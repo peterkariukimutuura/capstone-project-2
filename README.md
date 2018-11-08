@@ -19,6 +19,7 @@ class GetInputData{
 		String corner_kicks;
 		String free_kicks;
 		String players;
+		int total_number_of_cards_issued;
 
 		Scanner in =new Scanner(System.in);
 
@@ -62,6 +63,18 @@ class GetInputData{
 			 +" \n Number of Players - "+players); 
 
 
+		GetInputData obj = new GetInputData();
+		total_number_of_cards_issued = obj.GetTotalCardsIssued(red_cards,yellow_cards);
+
+		System.out.println("\n Total Number of Cards Issued - "+ Integer.toString(total_number_of_cards_issued));
+
+	}
+
+	public int GetTotalCardsIssued(String red_cards,String yellow_cards){
+		int num1 =Integer.parseInt(red_cards);
+		int num2 = Integer.parseInt(yellow_cards);
+
+		return num1+num2;
 	}
 }
 ```
